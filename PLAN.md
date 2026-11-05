@@ -19,7 +19,7 @@ reduced motion.
 4. **Projects:** NoVac, EV transmission, three-body simulation, MEMARO 2.0 (DMT), Formula Student crankshaft, press drivetrain, AI in wearables. Each card has an image frame, summary, role and a "Read more" drop-down.
 5. **Education:** Imperial (results and modules) and A-Levels.
 6. **Skills & learning:** engineering, programming, certifications, and an honest "what I'm learning now" list with levels.
-7. **Beyond work:** mentoring, public speaking and competitions, interests.
+7. **Beyond work:** mentoring, UK Space Design Competition volunteering, interests. No other pre-university items.
 8. **Contact:** email, LinkedIn, GitHub only.
 
 ## Rules followed

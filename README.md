@@ -44,16 +44,15 @@ Then open http://localhost:8000. You can also double-click `index.html`, but a l
 
 ## Deploy to GitHub Pages
 
-For the cleanest URL (`https://chak720.github.io/`):
+The site is set up for **https://chakshu-c.github.io/Personal-Website/**.
 
-1. On the **chak720** GitHub account, create a **public** repo named exactly `chak720.github.io`.
-2. Push these files to its `main` branch.
-3. Go to **Settings → Pages**, set **Source: Deploy from a branch**, choose **main** and **/ (root)**, then save.
-4. After a minute or two the site is live at `https://chak720.github.io/`.
-
-If you keep it in a repo with a different name (like this one), the URL becomes `https://<username>.github.io/<repo-name>/`. In that case, update the three URLs marked `SITE URL` near the top of `index.html` so link previews still work.
+1. Merge this branch into `main`.
+2. On GitHub, go to **Settings → Pages**, set **Source: Deploy from a branch**, choose **main** and **/ (root)**, then save.
+3. After a minute or two the site is live at the address above.
 
 Free GitHub Pages needs a **public** repo. That's fine, because nothing private is stored here.
+
+For a shorter address (`https://chakshu-c.github.io/`), rename the repo to `chakshu-c.github.io`, then update the three URLs marked `SITE URL` near the top of `index.html`.
 
 ### Netlify instead
 
@@ -64,7 +63,7 @@ Go to https://app.netlify.com/drop and drag this whole folder onto the page. The
 1. Buy a domain (e.g. from Cloudflare, Namecheap or Porkbun).
 2. On GitHub, open **Settings → Pages → Custom domain**, type it in (e.g. `chakshuchopra.com`) and save. This adds a `CNAME` file to the repo.
 3. At your domain provider, add DNS records:
-   - For `www`: a `CNAME` record pointing to `chak720.github.io`.
+   - For `www`: a `CNAME` record pointing to `chakshu-c.github.io`.
    - For the bare domain: `A` records pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`.
 4. Once GitHub shows the domain as verified, tick **Enforce HTTPS**.
 5. Update the `SITE URL` lines in `index.html` to the new domain.
