@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chakshu Chopra</title>
+  <meta name="description" content="Chakshu Chopra — portfolio and CV." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============================================================
+       EDIT ME: anything inside [square brackets] is a placeholder.
+       Search this file for "[" to find them all.
+       ============================================================ -->
+
+  <header class="nav">
+    <a href="#top" class="logo">CC<span class="dot">.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="glow"></div>
+      <p class="mono kicker">Hi, my name is</p>
+      <h1>Chakshu Chopra<span class="accent">.</span></h1>
+      <h2 class="typed-line">I <span id="typed"></span><span class="caret">|</span></h2>
+      <p class="lead">
+        <!-- Imperial is a guess based on your OneDrive folder; edit if wrong -->
+        Student at Imperial College London. [One or two sentences about what you
+        study, what you're interested in, and what you're looking for, e.g. internships in X.]
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View my work</a>
+        <a href="cv.pdf" class="btn ghost" target="_blank">Download CV</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h3 class="section-title"><span class="mono">01.</span> About me</h3>
+      <div class="about-grid">
+        <div>
+          <p>
+            [Write a short intro here: where you're from, what got you into your field,
+            and what you enjoy working on.]
+          </p>
+          <p>
+            [A second paragraph: current focus, interests outside of work/study,
+            or what kind of opportunities you're after.]
+          </p>
+        </div>
+        <div class="card stats">
+          <div><span class="stat-num">[Degree]</span><span class="stat-label">Imperial College London</span></div>
+          <div><span class="stat-num">[Year]</span><span class="stat-label">Expected graduation</span></div>
+          <div><span class="stat-num">[City]</span><span class="stat-label">Based in</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / EDUCATION TIMELINE -->
+    <section id="experience" class="section reveal">
+      <h3 class="section-title"><span class="mono">02.</span> Experience &amp; Education</h3>
+      <ol class="timeline">
+        <li>
+          <span class="mono date">[2024 — Present]</span>
+          <h4>[BEng/BSc/MEng Course Name] · Imperial College London</h4>
+          <p>[Relevant modules, grades, societies, awards.]</p>
+        </li>
+        <li>
+          <span class="mono date">[Month Year — Month Year]</span>
+          <h4>[Role] · [Company / Organisation]</h4>
+          <p>[What you did and what you achieved. Use numbers if you can.]</p>
+        </li>
+        <li>
+          <span class="mono date">[Year — Year]</span>
+          <h4>[School / A-levels / IB]</h4>
+          <p>[Subjects and results.]</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h3 class="section-title"><span class="mono">03.</span> Projects</h3>
+      <div class="project-grid">
+        <article class="card project">
+          <div class="project-top">
+            <span class="folder">◆</span>
+            <a href="https://github.com/chakshu-c" target="_blank" aria-label="GitHub">↗</a>
+          </div>
+          <h4>[Project One]</h4>
+          <p>[What it does, why you built it, and what you learned.]</p>
+          <ul class="tags mono"><li>[Python]</li><li>[Tech]</li></ul>
+        </article>
+        <article class="card project">
+          <div class="project-top">
+            <span class="folder">◆</span>
+            <a href="https://github.com/chakshu-c" target="_blank" aria-label="GitHub">↗</a>
+          </div>
+          <h4>[Project Two]</h4>
+          <p>[What it does, why you built it, and what you learned.]</p>
+          <ul class="tags mono"><li>[Tech]</li><li>[Tech]</li></ul>
+        </article>
+        <article class="card project">
+          <div class="project-top">
+            <span class="folder">◆</span>
+            <a href="https://github.com/chakshu-c/Personal-Website" target="_blank" aria-label="GitHub">↗</a>
+          </div>
+          <h4>This Website</h4>
+          <p>A hand-built personal portfolio in plain HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
+          <ul class="tags mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h3 class="section-title"><span class="mono">04.</span> Skills</h3>
+      <div class="skills">
+        <div class="card">
+          <h4>Languages</h4>
+          <ul class="tags mono"><li>Python</li><li>[Language]</li><li>[Language]</li></ul>
+        </div>
+        <div class="card">
+          <h4>Tools</h4>
+          <ul class="tags mono"><li>Git</li><li>Jupyter</li><li>[Tool]</li></ul>
+        </div>
+        <div class="card">
+          <h4>Other</h4>
+          <ul class="tags mono"><li>[Skill]</li><li>[Spoken languages]</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact reveal">
+      <p class="mono kicker">05. What's next?</p>
+      <h3>Get in touch</h3>
+      <p class="lead center">
+        I'm currently [open to internships / looking for opportunities in X].
+        My inbox is always open, so feel free to reach out.
+      </p>
+      <!-- Replace with the email you want public -->
+      <a class="btn primary" href="mailto:[your-email@example.com]">Say hello</a>
+      <div class="socials">
+        <a href="https://github.com/chakshu-c" target="_blank">GitHub</a>
+        <a href="[https://www.linkedin.com/in/your-profile]" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mono">Designed &amp; built by Chakshu Chopra · <span id="year"></span></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
