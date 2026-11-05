@@ -1,166 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chakshu Chopra</title>
-  <meta name="description" content="Chakshu Chopra — portfolio and CV." />
+  <title>Chakshu Chopra · Engineer heading into consulting and finance</title>
+  <meta name="description" content="Chakshu Chopra: MEng Mechanical Engineering at Imperial College London, incoming J.P. Morgan summer intern, and founder of CCST tutoring." />
+  <meta name="author" content="Chakshu Chopra" />
+  <meta name="theme-color" content="#0b0f17" />
+
+  <!-- SITE URL: if you host somewhere else, change https://chak720.github.io/ in the 3 lines below -->
+  <link rel="canonical" href="https://chak720.github.io/" />
+  <meta property="og:url" content="https://chak720.github.io/" />
+  <meta property="og:image" content="https://chak720.github.io/assets/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chakshu Chopra" />
+  <meta property="og:description" content="Mechanical Engineering at Imperial. Incoming J.P. Morgan summer intern. Founder of CCST tutoring since 2022." />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Chakshu Chopra: Mechanical Engineering, Imperial College London" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Fonts load without blocking the first paint -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" /></noscript>
   <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
   <!-- ============================================================
-       EDIT ME: anything inside [square brackets] is a placeholder.
-       Search this file for "[" to find them all.
+       HOW TO EDIT
+       - Text: just change the words between the tags.
+       - Photos: every grey dashed box is a <div class="frame">.
+         Replace it with the <img> line shown in the comment next to it.
+       - Anything in [TODO: ...] still needs your input.
        ============================================================ -->
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="nav">
-    <a href="#top" class="logo">CC<span class="dot">.</span></a>
-    <nav>
+    <a href="#top" class="logo">CC<span class="dot">.</span><span class="sr-only"> Chakshu Chopra, back to top</span></a>
+    <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
+      <a href="#beyond">Beyond</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </nav>
   </header>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="glow"></div>
-      <p class="mono kicker">Hi, my name is</p>
-      <h1>Chakshu Chopra<span class="accent">.</span></h1>
-      <h2 class="typed-line">I <span id="typed"></span><span class="caret">|</span></h2>
-      <p class="lead">
-        <!-- Imperial is a guess based on your OneDrive folder; edit if wrong -->
-        Student at Imperial College London. [One or two sentences about what you
-        study, what you're interested in, and what you're looking for, e.g. internships in X.]
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View my work</a>
-        <a href="cv.pdf" class="btn ghost" target="_blank">Download CV</a>
+  <main id="main">
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="top">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div>
+          <p class="mono kicker">Hi, my name is</p>
+          <h1>Chakshu Chopra<span class="accent">.</span></h1>
+          <!-- The rotating phrases live in script.js -->
+          <p class="typed-line" aria-hidden="true">I <span id="typed">study engineering at Imperial.</span><span class="caret">|</span></p>
+          <p class="lead">
+            Mechanical engineer at Imperial, heading into consulting and finance.
+            I've run my own tutoring business since 2022, and I'm joining
+            J.P. Morgan for summer 2027.
+          </p>
+          <div class="hero-buttons">
+            <!-- Put the CV you want public at assets/cv.pdf (remove phone number and address first) -->
+            <a href="assets/cv.pdf" class="btn primary" download>Download CV</a>
+            <a href="https://www.linkedin.com/in/chakshu-chopra-6818941b2" class="btn ghost" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:chakshu.chopra2005@gmail.com" class="btn ghost">Email</a>
+          </div>
+        </div>
+        <!-- HEADSHOT: replace this div with
+             <img class="headshot" src="assets/img/headshot.webp" width="600" height="750" alt="Chakshu Chopra" /> -->
+        <div class="frame headshot" role="img" aria-label="Headshot placeholder">
+          <span class="mono">[TODO: headshot]</span>
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ======================= ABOUT ======================= -->
     <section id="about" class="section reveal">
-      <h3 class="section-title"><span class="mono">01.</span> About me</h3>
+      <h2 class="section-title"><span class="mono">01.</span> About me</h2>
       <div class="about-grid">
         <div>
           <p>
-            [Write a short intro here: where you're from, what got you into your field,
-            and what you enjoy working on.]
+            I'm a third-year MEng Mechanical Engineering student at Imperial College London.
+            I got a First in both of my first two years. My degree is mostly design and
+            analysis: CAD, FEA, dynamics and a growing amount of code.
           </p>
           <p>
-            [A second paragraph: current focus, interests outside of work/study,
-            or what kind of opportunities you're after.]
+            I'm heading into consulting and finance. I use my engineering training for it.
+            Break the problem down, put numbers on it, check them, then explain the answer
+            clearly to the people who have to act on it.
+          </p>
+          <p>
+            Outside my degree I study probability and derivatives. This autumn I'm on the
+            Career26 Quant Trading Academy.
+          </p>
+          <p>
+            In 2022, while I was still at school, I started CCST, my own tutoring business.
+            It began with teaching my younger brother. Since then I've taught 30+ students,
+            and I built and run the website myself.
           </p>
         </div>
         <div class="card stats">
-          <div><span class="stat-num">[Degree]</span><span class="stat-label">Imperial College London</span></div>
-          <div><span class="stat-num">[Year]</span><span class="stat-label">Expected graduation</span></div>
-          <div><span class="stat-num">[City]</span><span class="stat-label">Based in</span></div>
+          <div><span class="stat-num">First Class</span><span class="stat-label">Years 1 and 2, MEng Mechanical Engineering, Imperial</span></div>
+          <div><span class="stat-num">30+ students</span><span class="stat-label">Taught through CCST since July 2022</span></div>
+          <div><span class="stat-num">Summer 2027</span><span class="stat-label">J.P. Morgan Corporate Analyst Development Program, London</span></div>
+          <div><span class="stat-num">2026</span><span class="stat-label">Royal Academy of Engineering Engineering Leaders Scholar · BP Future Talent Scholar</span></div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE / EDUCATION TIMELINE -->
+    <!-- ======================= EXPERIENCE ======================= -->
     <section id="experience" class="section reveal">
-      <h3 class="section-title"><span class="mono">02.</span> Experience &amp; Education</h3>
+      <h2 class="section-title"><span class="mono">02.</span> Experience</h2>
       <ol class="timeline">
         <li>
-          <span class="mono date">[2024 — Present]</span>
-          <h4>[BEng/BSc/MEng Course Name] · Imperial College London</h4>
-          <p>[Relevant modules, grades, societies, awards.]</p>
+          <span class="mono date">Jun – Aug 2027 · Incoming</span>
+          <h3>Summer Intern, Corporate Analyst Development Program · J.P. Morgan</h3>
+          <p>London. Offer accepted.</p>
         </li>
         <li>
-          <span class="mono date">[Month Year — Month Year]</span>
-          <h4>[Role] · [Company / Organisation]</h4>
-          <p>[What you did and what you achieved. Use numbers if you can.]</p>
+          <span class="mono date">Jul 2022 – Present</span>
+          <h3>Founder and Tutor · CCST (Chakshu Chopra STEM Tutoring)</h3>
+          <p>
+            I teach Maths, Further Maths, Physics, Chemistry and GCSE English, in groups and 1:1.
+            I set the pricing and group structures, handle invoicing and parent communication,
+            and track sessions and payments in my own Excel tracker. I built and run
+            <a class="inline" href="https://ccstemtutoring.com" target="_blank" rel="noopener">ccstemtutoring.com</a> myself.
+          </p>
         </li>
         <li>
-          <span class="mono date">[Year — Year]</span>
-          <h4>[School / A-levels / IB]</h4>
-          <p>[Subjects and results.]</p>
+          <span class="mono date">2026</span>
+          <h3>Engineering Leaders Scholar · Royal Academy of Engineering</h3>
+          <p>Picked through a national competitive process. The scholarship includes leadership training and peer mentoring with the rest of the cohort.</p>
+        </li>
+        <li>
+          <span class="mono date">2026</span>
+          <h3>Future Talent Scholar · BP</h3>
+          <p>National scholarship. In July 2026 I spent a four-day residential Discovery Week at BP's Sunbury site, with job shadowing and technical interview practice.</p>
+        </li>
+        <li>
+          <span class="mono date">Nov 2025 – Present</span>
+          <h3>Student Ambassador · Graduate Engineering Engagement Programme (GEEP)</h3>
+          <p>I completed the 2025–26 programme. Now I mentor the current cohort and help promote it to new applicants.</p>
+        </li>
+        <li>
+          <span class="mono date">Nov 2025 – Present</span>
+          <h3>Student Partner · Imperial College London</h3>
+          <p>I gather student feedback for staff and help test ideas for the I-Explore programme.</p>
+        </li>
+        <li class="earlier">
+          <span class="mono date">Earlier</span>
+          <h3>Internships</h3>
+          <p>
+            <strong>Minds4AI</strong> (Feb – Aug 2025): intern on a client's restaurant directory website.
+            I was the client's point of contact for feature requests.<br />
+            <strong>V-TAC</strong> (summer 2024): accounting and finance intern. I analysed sales data in Excel and presented it to senior management.
+          </p>
         </li>
       </ol>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ======================= PROJECTS =======================
+         One <article> per project. To add a project, copy a whole
+         <article class="card project"> ... </article> block and edit it.
+         The <details> part is the "Read more" drop-down.
+         ========================================================== -->
     <section id="projects" class="section reveal">
-      <h3 class="section-title"><span class="mono">03.</span> Projects</h3>
+      <h2 class="section-title"><span class="mono">03.</span> Projects</h2>
       <div class="project-grid">
+
+        <!-- PROJECT: NoVac -->
         <article class="card project">
-          <div class="project-top">
-            <span class="folder">◆</span>
-            <a href="https://github.com/chakshu-c" target="_blank" aria-label="GitHub">↗</a>
-          </div>
-          <h4>[Project One]</h4>
-          <p>[What it does, why you built it, and what you learned.]</p>
-          <ul class="tags mono"><li>[Python]</li><li>[Tech]</li></ul>
+          <!-- PHOTO: <img src="assets/img/novac.webp" width="1200" height="800" loading="lazy" alt="[describe the photo]" /> -->
+          <div class="frame" role="img" aria-label="Photo placeholder"><span class="mono">[TODO: photo of NoVac robot]</span></div>
+          <p class="mono meta">Feb 2026 · Design Week · Team of 4</p>
+          <h3>NoVac tennis ball collector</h3>
+          <p>A tennis ball collector that picks balls up with suction. Scored 70% overall, and our drivetrain and shaft got full marks in function testing.</p>
+          <p class="role"><strong>My role:</strong> planning lead, motor and impeller sizing, final presentation.</p>
+          <details>
+            <summary>Read more</summary>
+            <ul>
+              <li>Ran the planning: Gantt chart, concept elimination matrix and weighted PDS scoring across four concepts.</li>
+              <li>Surveyed players to decide which requirements mattered most.</li>
+              <li>Selected and sized the BLDC vacuum motor and centrifugal impeller from first-principles suction and pressure calculations. Approved the final shaft drawing.</li>
+              <li>Interpreted the CFD and FEA results and led the sustainability and ergonomics analysis. We also considered the ethics of replacing ball kids.</li>
+              <li>Wrote the executive summary and presented to the judging panel.</li>
+            </ul>
+            <p><strong>What I learned:</strong> AI tools are useful for generating concepts and sense-checking sums, but every number has to be proved from first principles before you trust it.</p>
+          </details>
+          <ul class="tags mono"><li>Product design</li><li>CFD / FEA</li><li>Project management</li></ul>
         </article>
+
+        <!-- PROJECT: EV transmission -->
         <article class="card project">
-          <div class="project-top">
-            <span class="folder">◆</span>
-            <a href="https://github.com/chakshu-c" target="_blank" aria-label="GitHub">↗</a>
-          </div>
-          <h4>[Project Two]</h4>
-          <p>[What it does, why you built it, and what you learned.]</p>
-          <ul class="tags mono"><li>[Tech]</li><li>[Tech]</li></ul>
+          <!-- PHOTO: <img src="assets/img/ev-transmission.webp" width="1200" height="800" loading="lazy" alt="[describe the photo]" /> -->
+          <div class="frame" role="img" aria-label="Photo placeholder"><span class="mono">[TODO: photo or render of EV transmission]</span></div>
+          <p class="mono meta">Oct 2025 – Jan 2026 · Team of 5</p>
+          <h3>Electric vehicle transmission</h3>
+          <p>Design, manufacture and test of an EV transmission module. We scored 74%, and I got 100% in peer feedback for team leadership.</p>
+          <p class="role"><strong>My role:</strong> project manager, plus drivetrain and frame design.</p>
+          <details>
+            <summary>Read more</summary>
+            <ul>
+              <li>Set the milestones and allocated tasks across a five-person team so we delivered on time.</li>
+              <li>Designed and modelled the drivetrain and frame in SolidWorks and ran the FEA.</li>
+              <li>Ran manufacturing from start to finish: manual milling, turning and laser cutting. Kept a full engineering logbook.</li>
+            </ul>
+            <p><strong>What I learned:</strong> how to run a team to a fixed deadline while still doing my own share of the engineering.</p>
+          </details>
+          <ul class="tags mono"><li>SolidWorks</li><li>FEA</li><li>Manufacturing</li><li>Leadership</li></ul>
         </article>
+
+        <!-- PROJECT: Three-body simulation -->
         <article class="card project">
-          <div class="project-top">
-            <span class="folder">◆</span>
-            <a href="https://github.com/chakshu-c/Personal-Website" target="_blank" aria-label="GitHub">↗</a>
-          </div>
-          <h4>This Website</h4>
-          <p>A hand-built personal portfolio in plain HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
-          <ul class="tags mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <!-- PHOTO: <img src="assets/img/three-body.webp" width="1200" height="800" loading="lazy" alt="[describe the plot]" /> -->
+          <div class="frame" role="img" aria-label="Image placeholder"><span class="mono">[TODO: trajectory plot from the simulation]</span></div>
+          <p class="mono meta">Mar 2026 · Pair project · 85% module result</p>
+          <h3>Earth–Moon three-body simulation</h3>
+          <p>A Python model of a spacecraft moving under Earth and Moon gravity, with a fourth-order Runge-Kutta solver written from scratch in NumPy.</p>
+          <p class="role"><strong>Module:</strong> Year 2 Mathematics and Computing, finished with 85%.</p>
+          <details>
+            <summary>Read more</summary>
+            <ul>
+              <li>Derived the rotating-frame equations of motion for the 3D circular restricted three-body problem.</li>
+              <li>Compared four sets of initial conditions, two planar and two 3D.</li>
+              <li>Validated the solver by tracking the Jacobi constant, which should stay fixed. Relative drift ranged from about 10<sup>-14</sup> to 10<sup>-8</sup>.</li>
+              <li>Analysed the results with 3D trajectory plots, phase portraits, zero-velocity contour maps and an FFT with a Hanning window.</li>
+            </ul>
+            <p><strong>What I learned:</strong> the largest error came from the orbit that passed closest to Earth, where the time step matters most. Checking a conserved quantity is a quick way to catch that.</p>
+          </details>
+          <ul class="tags mono"><li>Python</li><li>NumPy</li><li>Numerical methods</li></ul>
         </article>
+
+        <!-- PROJECT: DMT / MEMARO 2.0 -->
+        <article class="card project">
+          <!-- PHOTO: <img src="assets/img/memaro.webp" width="1200" height="800" loading="lazy" alt="[describe the photo]" /> -->
+          <div class="frame" role="img" aria-label="Photo placeholder"><span class="mono">[TODO: MEMARO 2.0 photo or render]</span></div>
+          <p class="mono meta">2026 – Present · In progress</p>
+          <h3>MEMARO 2.0 Mars rover (DMT)</h3>
+          <p>Year 3 Design, Make and Test group project to build a Mars rover body. It's worth a third of my third-year marks.</p>
+          <p class="role"><strong>My role:</strong> project manager of the payload interface sub-team.</p>
+          <details>
+            <summary>Read more</summary>
+            <ul>
+              <li>I run our sub-team meetings to generate and evaluate ideas.</li>
+              <li>I then work with the structural team and the subassembly and project leads to agree next steps.</li>
+              <li>The project ends with formal reports, a poster, oral presentations and a public exhibition.</li>
+            </ul>
+            <p><strong>Status:</strong> in progress. I'll add results after the exhibition.</p>
+          </details>
+          <ul class="tags mono"><li>Robotics</li><li>Team leadership</li></ul>
+        </article>
+
+        <!-- PROJECT: Formula Student -->
+        <article class="card project">
+          <!-- PHOTO: <img src="assets/img/crankshaft.webp" width="1200" height="800" loading="lazy" alt="[describe the photo]" /> -->
+          <div class="frame" role="img" aria-label="Image placeholder"><span class="mono">[TODO: crankshaft CAD render]</span></div>
+          <p class="mono meta">Oct 2024 – Jun 2026 · Imperial Formula Student</p>
+          <h3>Formula Student crankshaft</h3>
+          <p>I owned the crankshaft design and analysis for Imperial's race car, after working on the spaceframe in first year.</p>
+          <p class="role"><strong>My role:</strong> chassis and engine sub-teams.</p>
+          <details>
+            <summary>Read more</summary>
+            <ul>
+              <li>First year: CAD and FEA on the spaceframe to improve its stiffness-to-weight ratio.</li>
+              <li>Crankshaft: material selection, torsional vibration and fatigue analysis.</li>
+            </ul>
+          </details>
+          <ul class="tags mono"><li>CAD</li><li>FEA</li><li>Fatigue</li></ul>
+        </article>
+
+        <!-- PROJECT: Design transmission -->
+        <article class="card project">
+          <!-- PHOTO: <img src="assets/img/press-drivetrain.webp" width="1200" height="800" loading="lazy" alt="[describe the drawing]" /> -->
+          <div class="frame" role="img" aria-label="Image placeholder"><span class="mono">[TODO: drivetrain drawing or render]</span></div>
+          <p class="mono meta">Dec 2024 – Apr 2025 · 78% (Distinction)</p>
+          <h3>Industrial press drivetrain</h3>
+          <p>A drivetrain for a high-speed industrial press, designed in SolidWorks. I did the kinematic and power analysis to pick the components.</p>
+          <p class="role"><strong>My role:</strong> drivetrain design, shaft-hub interface and frame.</p>
+          <details>
+            <summary>Read more</summary>
+            <ul>
+              <li>Finalised the shaft-hub interface and the supporting frame, with the alignment and bearing support it needed.</li>
+              <li>Produced the full manufacturing package: A3 engineering drawings, a bill of materials and process instructions.</li>
+            </ul>
+          </details>
+          <ul class="tags mono"><li>SolidWorks</li><li>Machine design</li></ul>
+        </article>
+
+        <!-- PROJECT: Literature review -->
+        <article class="card project">
+          <!-- PHOTO: <img src="assets/img/wearables.webp" width="1200" height="800" loading="lazy" alt="[describe the image]" /> -->
+          <div class="frame" role="img" aria-label="Image placeholder"><span class="mono">[TODO: image for AI in wearables]</span></div>
+          <p class="mono meta">2026 – Present · In progress</p>
+          <h3>AI in wearable systems</h3>
+          <p>My Year 3 literature review. It traces how AI in wearables moved from classic machine learning to edge AI, multimodal models and agents.</p>
+          <p class="role"><strong>My role:</strong> individual review project.</p>
+          <details>
+            <summary>Read more</summary>
+            <ul>
+              <li>Covers activity recognition, health monitoring and human-machine interaction.</li>
+              <li>Compares on-device, edge and cloud processing on accuracy, energy, latency, privacy and reliability.</li>
+            </ul>
+          </details>
+          <ul class="tags mono"><li>AI / ML</li><li>Research</li></ul>
+        </article>
+
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- ======================= EDUCATION ======================= -->
+    <section id="education" class="section reveal">
+      <h2 class="section-title"><span class="mono">04.</span> Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="mono date">2024 – 2028</span>
+          <h3>MEng Mechanical Engineering · Imperial College London</h3>
+          <p>First Class result in Year 1 and Year 2. Predicted First Class Honours.</p>
+          <p><strong>Year 3:</strong> Mechatronics, Dynamics, Statistics, Mathematics, Embedded C, Design Make and Test project, Literature Review project, I-Explore: Business for Professional Engineers and Scientists.</p>
+          <p><strong>Years 1–2 highlights:</strong> Mathematics and Computing (85%), Mechanics, Stress Analysis, Design and Manufacture, Thermodynamics, Fluid Mechanics.</p>
+          <p><strong>Extra:</strong> Business and Economic Ideas (Imperial Horizons), Pass with Distinction.</p>
+        </li>
+        <li>
+          <span class="mono date">2023</span>
+          <h3>A-Levels · Queen Elizabeth's School, Barnet</h3>
+          <p>A* Mathematics, A* Further Mathematics, A* Physics, A Chemistry.</p>
+          <p>LIBF Diploma in Financial Studies: A.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======================= SKILLS ======================= -->
     <section id="skills" class="section reveal">
-      <h3 class="section-title"><span class="mono">04.</span> Skills</h3>
+      <h2 class="section-title"><span class="mono">05.</span> Skills &amp; learning</h2>
       <div class="skills">
         <div class="card">
-          <h4>Languages</h4>
-          <ul class="tags mono"><li>Python</li><li>[Language]</li><li>[Language]</li></ul>
+          <h3>Engineering</h3>
+          <ul class="tags mono"><li>SolidWorks</li><li>Fusion 360</li><li>FEA</li><li>Milling &amp; turning</li><li>Laser cutting</li><li>Arduino</li></ul>
         </div>
         <div class="card">
-          <h4>Tools</h4>
-          <ul class="tags mono"><li>Git</li><li>Jupyter</li><li>[Tool]</li></ul>
+          <h3>Programming &amp; data</h3>
+          <ul class="tags mono"><li>Python (NumPy, Pandas, Matplotlib)</li><li>C / Embedded C</li><li>MATLAB</li><li>Excel</li></ul>
         </div>
         <div class="card">
-          <h4>Other</h4>
-          <ul class="tags mono"><li>[Skill]</li><li>[Spoken languages]</li></ul>
+          <h3>Certifications</h3>
+          <ul class="plain">
+            <li>Python Institute PCEP</li>
+            <li>MathWorks Certified MATLAB Associate</li>
+            <li>C++ Institute CLE (C, entry level)</li>
+            <li>Microsoft Azure AI Fundamentals</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub">What I'm learning now</h3>
+      <!-- Honest levels. Update these as you go. -->
+      <ul class="learning">
+        <li><span class="mono level">Working level</span><span><strong>Python.</strong> Used it for my three-body simulation. Now building bigger programs.</span></li>
+        <li><span class="mono level">Beginner</span><span><strong>C++ and SQL.</strong> Early days, learning the basics.</span></li>
+        <li><span class="mono level">Fundamentals</span><span><strong>Machine learning.</strong> Imperial Data Science Society machine learning course.</span></li>
+        <li><span class="mono level">In progress</span><span><strong>Quant trading.</strong> Career26 Quant Trading Academy (autumn 2026). Member of AlgoSoc, MathsSoc and DocSoc.</span></li>
+        <li><span class="mono level">Reading</span><span><strong>Probability and derivatives.</strong> Bertsekas &amp; Tsitsiklis, Hull, Wilmott, Heard on the Street, Mosteller's Fifty Challenging Problems.</span></li>
+      </ul>
+    </section>
+
+    <!-- ======================= BEYOND WORK ======================= -->
+    <section id="beyond" class="section reveal">
+      <h2 class="section-title"><span class="mono">06.</span> Beyond work</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>Mentoring</h3>
+          <p>In summer 2026 I mentored six Year 9 and 10 students at the Cambridge Engineering and AI Summer School. I gave a guest lecture on self-repairing and self-replicating space robots, and ran public speaking and mock interview sessions.</p>
+          <p>I also go back to my old school to mentor UK Space Design Competition teams.</p>
+        </div>
+        <div class="card">
+          <h3>Public speaking &amp; competitions</h3>
+          <ul class="plain">
+            <li>LAMDA Grade 8 public speaking, Distinction</li>
+            <li>UK Space Design Competition national finalist, two years running</li>
+            <li>VEX Robotics co-leader: two World Championship qualifications</li>
+            <li>UKMT Maclaurin Olympiad</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Interests</h3>
+          <ul class="tags mono"><li>Tennis</li><li>Padel</li><li>Weightlifting</li><li>Cooking</li><li>Electric guitar (learning)</li></ul>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ======================= CONTACT ======================= -->
     <section id="contact" class="section contact reveal">
-      <p class="mono kicker">05. What's next?</p>
-      <h3>Get in touch</h3>
+      <p class="mono kicker">07. What's next?</p>
+      <h2>Get in touch</h2>
       <p class="lead center">
-        I'm currently [open to internships / looking for opportunities in X].
-        My inbox is always open, so feel free to reach out.
+        I'm interested in consulting, finance and quant roles, and in engineering
+        work with a strong analytical side. The quickest way to reach me is email.
       </p>
-      <!-- Replace with the email you want public -->
-      <a class="btn primary" href="mailto:[your-email@example.com]">Say hello</a>
+      <a class="btn primary" href="mailto:chakshu.chopra2005@gmail.com">Say hello</a>
       <div class="socials">
-        <a href="https://github.com/chakshu-c" target="_blank">GitHub</a>
-        <a href="[https://www.linkedin.com/in/your-profile]" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/chakshu-chopra-6818941b2" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/chak720" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:chakshu.chopra2005@gmail.com">chakshu.chopra2005@gmail.com</a>
       </div>
     </section>
   </main>
 
-  <footer class="mono">Designed &amp; built by Chakshu Chopra · <span id="year"></span></footer>
+  <footer class="mono">© <span id="year">2026</span> Chakshu Chopra</footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

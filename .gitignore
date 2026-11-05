@@ -1,0 +1,9 @@
+# Private source material: keep it out of this public repo
+source/
+*.docx
+*.doc
+*.pdf
+!assets/cv.pdf
+
+.DS_Store
+Thumbs.db
